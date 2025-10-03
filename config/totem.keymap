@@ -46,6 +46,69 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
+
+        LongPress: LongPress {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LONGPRESS";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
+        };
+
+        HRShiftR: HRShiftR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRSHIFTR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-trigger-on-release;
+        };
+
+        HRShiftL: HRShiftL {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRSHIFTL";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-trigger-on-release;
+        };
+
+        HMR: HMR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-trigger-on-release;
+            flavor = "tap-preferred";
+        };
+
+        HML: HML {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-trigger-on-release;
+            flavor = "tap-preferred";
+        };
+
+        toggleLayerPress: toggleLayerPress {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TOGGLELAYERPRESS";
+            bindings = <&tog>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
