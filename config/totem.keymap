@@ -127,7 +127,7 @@
         };
 
         NUMBER {
-            display-name = "Nav";
+            display-name = "NUMBER";
             bindings = <
                 &kp DE_ASTERISK  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_PLUS     &none   &kp DE_LESS_THAN  &kp UP_ARROW    &kp DE_GREATER_THAN  &kp DE_A_UMLAUT
                 &kp DE_SLASH     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_MINUS    &none   &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp DE_O_UMLAUT
