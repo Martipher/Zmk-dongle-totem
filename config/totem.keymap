@@ -139,20 +139,20 @@
         SYMBOL {
             display-name = "SYMBOL";
             bindings = <
-        &kp F2        &kp F3  &kp F4          &kp F5    &kp F6           &kp F7           &kp F8            &kp F9               &kp F10               &kp F11
-        &kp DE_CARET  &trans  &trans          &kp HOME  &kp PAGE_UP      &kp DE_EXCL      &kp DE_BACKSLASH  &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp DE_TILDE
-&kp F1  &trans        &trans  &trans          &kp END   &kp PAGE_DOWN    &kp DE_QUESTION  &kp DE_PIPE       &kp DE_LEFT_BRACE    &kp DE_RIGHT_BRACE    &kp DE_ACUTE  &kp F12
-                              &kp LEFT_SHIFT  &trans    &trans           &trans           &trans            &kp RALT
+        &kp F2        &kp F3  &kp F4           &kp F5    &kp F6           &kp F7           &kp F8            &kp F9               &kp F10               &kp F11
+        &kp DE_CARET  &trans  &kp PAUSE_BREAK  &kp HOME  &kp PAGE_UP      &kp DE_EXCL      &kp DE_BACKSLASH  &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp DE_TILDE
+&kp F1  &trans        &trans  &trans           &kp END   &kp PAGE_DOWN    &kp DE_QUESTION  &kp DE_PIPE       &kp DE_LEFT_BRACE    &kp DE_RIGHT_BRACE    &kp DE_ACUTE  &kp F12
+                              &kp LEFT_SHIFT   &trans    &trans           &trans           &trans            &kp RALT
             >;
         };
 
         Fun {
             display-name = "Fun";
             bindings = <
-        &bootloader  &trans  &trans  &trans  &to 4     &trans  &trans  &trans  &kp END  &kp F1
-        &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F10
-&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F20  &kp F7
-                             &trans  &trans  &trans    &trans  &trans  &trans
+        &bootloader  &studio_unlock  &trans  &trans  &to 4     &trans  &trans  &trans  &kp END  &kp F1
+        &trans       &trans          &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F10
+&trans  &trans       &trans          &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F20  &kp F7
+                                     &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
