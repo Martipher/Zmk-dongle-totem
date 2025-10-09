@@ -121,7 +121,7 @@
             bindings = <
             &kp DE_Q       &kp DE_W       &kp DE_E                  &kp DE_R                  &LongPress LC(LS(DE_T)) DE_T    &kp DE_Z  &kp DE_U        &kp DE_I        &kp DE_O       &kp DE_P
             &hm LGUI DE_A  &hm LALT DE_S  &hm LCTRL DE_D            &hm LSHIFT DE_F           &kp DE_G                        &kp DE_H  &hm RSHFT DE_J  &hm RCTRL DE_K  &hm RALT DE_L  &hm RGUI DE_ESZETT
-&kp ESCAPE  &kp DE_Y       &kp DE_X       &LongPress LS(DE_C) DE_C  &LongPress LS(DE_V) DE_V  &kp DE_B                        &kp N     &kp M           &kp COMMA       &kp DOT        &kp DE_MINUS        &kp DE_POUND
+&kp ESCAPE  &kp DE_Y       &kp DE_X       &LongPress LC(DE_C) DE_C  &LongPress LC(DE_V) DE_V  &kp DE_B                        &kp N     &kp M           &kp COMMA       &kp DOT        &kp DE_MINUS        &kp DE_POUND
                                           &lt 3 LEFT_GUI            &lt 1 TAB                 &kp SPACE                       &kp RET   &lt 2 BSPC      &kp DELETE
             >;
         };
