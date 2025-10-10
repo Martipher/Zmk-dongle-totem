@@ -115,7 +115,7 @@
         compatible = "zmk,combos";
 
         caps {
-            bindings = <&caps_word>;
+            bindings = <&kt CAPS>;
             key-positions = <34 35>;
             timeout-ms = <150>;
             layers = <0>;
