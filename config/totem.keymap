@@ -111,7 +111,23 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        caps {
+            bindings = <&caps_word>;
+            key-positions = <34 35>;
+            timeout-ms = <150>;
+            layers = <0>;
+        };
+
+        enter_right {
+            bindings = <&kp ENTER>;
+            key-positions = <16 17 18>;
+            timeout-ms = <150>;
+            layers = <0 4 1>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -119,20 +135,20 @@
         QWERTZ {
             display-name = "QWERTZ";
             bindings = <
-            &kp DE_Q       &kp DE_W       &kp DE_E                  &kp DE_R                  &LongPress LC(LS(DE_T)) DE_T    &kp DE_Z  &kp DE_U        &kp DE_I        &kp DE_O       &kp DE_P
-            &hm LGUI DE_A  &hm LALT DE_S  &hm LCTRL DE_D            &hm LSHIFT DE_F           &kp DE_G                        &kp DE_H  &hm RSHFT DE_J  &hm RCTRL DE_K  &hm RALT DE_L  &hm RGUI DE_ESZETT
-&kp ESCAPE  &kp DE_Y       &kp DE_X       &LongPress LC(DE_C) DE_C  &LongPress LC(DE_V) DE_V  &kp DE_B                        &kp N     &kp M           &kp COMMA       &kp DOT        &kp DE_MINUS        &kp DE_POUND
-                                          &lt 3 LEFT_GUI            &lt 1 TAB                 &kp SPACE                       &kp RET   &lt 2 BSPC      &kp DELETE
+            &kp DE_Q       &kp DE_W       &kp DE_E                  &kp DE_R                  &LongPress LC(LS(DE_T)) DE_T    &kp DE_Z      &kp DE_U        &kp DE_I        &kp DE_O       &kp DE_P
+            &hm LGUI DE_A  &hm LALT DE_S  &hm LCTRL DE_D            &hm LSHIFT DE_F           &kp DE_G                        &kp DE_H      &hm RSHFT DE_J  &hm RCTRL DE_K  &hm RALT DE_L  &hm RGUI DE_ESZETT
+&kp ESCAPE  &kp DE_Y       &kp DE_X       &LongPress LC(DE_C) DE_C  &LongPress LC(DE_V) DE_V  &kp DE_B                        &kp DE_N      &kp DE_M        &kp DE_COMMA    &kp DE_PERIOD  &kp DE_MINUS        &kp DE_SQT
+                                          &lt 3 LEFT_GUI            &lt 1 TAB                 &kp DE_SPACE                    &kp DE_SPACE  &lt 2 BSPC      &kp DELETE
             >;
         };
 
         NUMBER {
             display-name = "NUMBER";
             bindings = <
-                &kp DE_ASTERISK  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_PLUS     &none   &kp DE_LESS_THAN  &kp UP_ARROW    &kp DE_GREATER_THAN  &kp DE_A_UMLAUT
-                &kp DE_SLASH     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_MINUS    &none   &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp DE_O_UMLAUT
-&kp LEFT_SHIFT  &kp DE_N0        &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_EQUAL    &none   &none             &kp DE_COMMA    &kp DE_PERIOD        &kp DE_U_UMLAUT  &kp PLUS
-                                            &trans     &trans     &trans          &trans  &trans            &trans
+                &kp DE_ASTERISK  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_PLUS     &none      &kp DE_LESS_THAN  &kp UP_ARROW    &kp DE_GREATER_THAN  &kp DE_A_UMLAUT
+                &kp DE_SLASH     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_MINUS    &none      &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp DE_O_UMLAUT
+&kp LEFT_SHIFT  &kp DE_N0        &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_EQUAL    &none      &none             &kp DE_COMMA    &kp DE_PERIOD        &kp DE_U_UMLAUT  &kp DE_HASH
+                                            &trans     &trans     &trans          &kp ENTER  &trans            &trans
             >;
         };
 
@@ -142,7 +158,7 @@
         &kp F2        &kp F3  &kp F4           &kp F5    &kp F6           &kp F7           &kp F8            &kp F9               &kp F10               &kp F11
         &kp DE_CARET  &none   &kp PAUSE_BREAK  &kp HOME  &kp PAGE_UP      &kp DE_EXCL      &kp DE_BACKSLASH  &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp DE_TILDE
 &kp F1  &none         &none   &none            &kp END   &kp PAGE_DOWN    &kp DE_QUESTION  &kp DE_PIPE       &kp DE_LEFT_BRACE    &kp DE_RIGHT_BRACE    &kp DE_ACUTE  &kp F12
-                              &kp LEFT_SHIFT   &trans    &trans           &trans           &trans            &kp RALT
+                              &trans           &trans    &trans           &trans           &trans            &trans
             >;
         };
 
@@ -171,7 +187,7 @@
             bindings = <
          &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4  &kp DE_N5    &kp DE_Z  &kp DE_U  &kp DE_I  &kp DE_O  &kp DE_P
          &kp DE_N6  &kp DE_N7  &trans     &kp DE_N8  &kp DE_G     &kp DE_H  &kp DE_J  &kp DE_K  &kp DE_L  &kp F12
-&kp TAB  &to 0      &trans     &trans     &trans     &kp DE_N9    &kp DE_N  &kp DE_M  &none     &none     &kp F22   &kp LA(F4)
+&kp TAB  &to 0      &trans     &trans     &trans     &kp DE_N9    &kp DE_N  &kp DE_M  &none     &kp F3    &kp F22   &kp LA(F4)
                                &trans     &trans     &trans       &trans    &trans    &trans
             >;
         };
