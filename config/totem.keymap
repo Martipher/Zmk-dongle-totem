@@ -129,13 +129,6 @@
             layers = <0>;
         };
 
-        enter_right {
-            bindings = <&kp ENTER>;
-            key-positions = <16 17 18>;
-            timeout-ms = <150>;
-            layers = <0 5>;
-        };
-
         sqt {
             bindings = <&kp DE_SQT>;
             key-positions = <16 17>;
@@ -258,7 +251,7 @@
                  &kp DE_K        &kp DE_PERIOD   &kp DE_O         &kp DE_COMMA           &kp DE_Y           &mt LC(DE_V) DE_V  &kp DE_G              &mt LC(DE_C) DE_C  &kp DE_L        &kp DE_ESZETT
                  &HML LGUI DE_H  &HML LALT DE_A  &HML LCTRL DE_E  &HRShiftL LSHIFT DE_I  &kp DE_U           &kp DE_D           &HRShiftR RSHFT DE_T  &HMR RCTRL DE_R    &HMR RALT DE_N  &HMR RGUI DE_S
 &mt ESCAPE DE_F  &kp DE_X        &kp DE_Q        &kp DE_A_UMLAUT  &kp DE_U_UMLAUT        &kp DE_O_UMLAUT    &kp DE_B           &kp DE_P              &kp DE_W           &kp DE_M        &kp DE_J        &kp DE_Z
-                                                 &lt 4 LEFT_GUI   &lt 2 TAB              &kp DE_SPACE       &kp DE_SPACE       &lt 1 BSPC            &lt 3 DELETE
+                                                 &lt 4 LEFT_GUI   &lt 2 TAB              &kp DE_SPACE       &kp ENTER          &lt 1 BSPC            &lt 3 DELETE
             >;
         };
 
