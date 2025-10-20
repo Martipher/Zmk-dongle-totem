@@ -135,6 +135,90 @@
             timeout-ms = <150>;
             layers = <0>;
         };
+
+        sqt {
+            bindings = <&kp DE_SQT>;
+            key-positions = <16 17>;
+            timeout-ms = <150>;
+            layers = <0>;
+        };
+
+        minus {
+            bindings = <&kp DE_MINUS>;
+            key-positions = <13 12>;
+            timeout-ms = <150>;
+            layers = <0>;
+        };
+
+        underscore {
+            bindings = <&kp DE_UNDERSCORE>;
+            key-positions = <2 3>;
+            timeout-ms = <150>;
+            layers = <0>;
+        };
+
+        dqt {
+            bindings = <&kp DE_DQT>;
+            key-positions = <7 6>;
+            timeout-ms = <150>;
+            layers = <0>;
+        };
+
+        enter_left {
+            bindings = <&kp ENTER>;
+            key-positions = <11 12 13>;
+            timeout-ms = <150>;
+            layers = <0>;
+        };
+
+        question {
+            bindings = <&kp DE_QUESTION>;
+            key-positions = <1 2>;
+            timeout-ms = <150>;
+            layers = <0>;
+        };
+
+        exclamation {
+            bindings = <&kp DE_EXCLAMATION>;
+            key-positions = <11 12>;
+            timeout-ms = <150>;
+            layers = <0>;
+        };
+
+        slash {
+            bindings = <&kp DE_SLASH>;
+            key-positions = <24 23>;
+            timeout-ms = <150>;
+            layers = <0>;
+        };
+
+        backslash {
+            bindings = <&kp DE_BACKSLASH>;
+            key-positions = <23 22>;
+            timeout-ms = <150>;
+            layers = <0>;
+        };
+
+        left_parenthesis {
+            bindings = <&kp DE_LEFT_PARENTHESIS>;
+            key-positions = <27 28>;
+            timeout-ms = <150>;
+            layers = <0>;
+        };
+
+        right_parenthesis {
+            bindings = <&kp DE_RIGHT_PARENTHESIS>;
+            key-positions = <28 29>;
+            timeout-ms = <150>;
+            layers = <0>;
+        };
+
+        and {
+            bindings = <&kp DE_AMPERSAND>;
+            key-positions = <17 18>;
+            timeout-ms = <150>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -194,9 +278,9 @@
         GAME {
             display-name = "Game";
             bindings = <
-         &kp DE_Y        &kp DE_X  &kp DE_C   &kp DE_V      &sl 6       &trans  &trans          &kp UP_ARROW    &trans           &trans
-         &kp LALT        &kp DE_Q  &kp DE_W   &kp DE_E      &kp DE_R    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp ESC  &kp LEFT_SHIFT  &kp DE_A  &kp DE_S   &kp DE_D      &kp DE_F    &trans  &trans          &trans          &trans           &trans  &kp ESCAPE
+         &kp DE_Y        &kp DE_X  &kp DE_C   &kp DE_V      &sl 6       &sl 3   &none           &kp UP_ARROW    &none            &none
+         &kp LALT        &kp DE_Q  &kp DE_W   &kp DE_E      &kp DE_R    &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&kp ESC  &kp LEFT_SHIFT  &kp DE_A  &kp DE_S   &kp DE_D      &kp DE_F    &none   &none           &none           &none            &none  &kp ESCAPE
                                    &kp LCTRL  &kp LEFT_ALT  &trans      &trans  &trans          &kp LEFT_GUI
             >;
         };
