@@ -161,7 +161,7 @@
             bindings = <&kp ENTER>;
             key-positions = <11 12 13>;
             timeout-ms = <150>;
-            layers = <0 5>;
+            layers = <0>;
         };
 
         question {
@@ -239,6 +239,12 @@
             key-positions = <21 22>;
             timeout-ms = <150>;
             layers = <0>;
+        };
+
+        enter_right {
+            bindings = <&kp ENTER>;
+            key-positions = <16 17 18>;
+            timeout-ms = <150>;
         };
     };
 
