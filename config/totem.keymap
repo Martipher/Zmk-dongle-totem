@@ -25,7 +25,7 @@
     quick-tap-ms = <100>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <170>;
+    tapping-term-ms = <250>;
 };
 
 &lt {
@@ -66,6 +66,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34>;
+            quick-tap-ms = <125>;
         };
 
         HRShiftL: HRShiftL {
@@ -76,6 +78,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 35 36 37>;
+            quick-tap-ms = <125>;
         };
 
         HMR: HMR {
@@ -87,6 +91,8 @@
             tapping-term-ms = <200>;
             hold-trigger-on-release;
             flavor = "tap-preferred";
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34>;
+            quick-tap-ms = <125>;
         };
 
         HML: HML {
@@ -98,6 +104,8 @@
             tapping-term-ms = <200>;
             hold-trigger-on-release;
             flavor = "tap-preferred";
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 35 36 37>;
+            quick-tap-ms = <125>;
         };
 
         toggleLayerPress: toggleLayerPress {
@@ -125,7 +133,7 @@
             bindings = <&kp ENTER>;
             key-positions = <16 17 18>;
             timeout-ms = <150>;
-            layers = <0 5 2>;
+            layers = <0>;
         };
     };
 
@@ -135,10 +143,10 @@
         KOY {
             display-name = "KOY";
             bindings = <
-                 &kp DE_K       &kp DE_PERIOD  &kp DE_O         &kp DE_COMMA     &kp DE_Y           &mt LC(DE_V) DE_V  &kp DE_G        &mt LC(DE_C) DE_C  &kp DE_L       &kp DE_ESZETT
-                 &hm LGUI DE_H  &hm LALT DE_A  &hm LCTRL DE_E   &hm LSHIFT DE_I  &kp DE_U           &kp DE_D           &hm RSHFT DE_T  &hm RCTRL DE_R     &hm RALT DE_N  &hm RGUI DE_S
-&mt ESCAPE DE_F  &kp DE_X       &kp DE_Q       &kp DE_A_UMLAUT  &kp DE_U_UMLAUT  &kp DE_O_UMLAUT    &kp DE_B           &kp DE_P        &kp DE_W           &kp DE_M       &kp DE_J       &kp DE_Z
-                                               &lt 4 LEFT_GUI   &lt 2 TAB        &kp DE_SPACE       &kp ENTER          &lt 1 BSPC      &lt 3 DELETE
+                 &kp DE_K        &kp DE_PERIOD   &kp DE_O         &kp DE_COMMA           &kp DE_Y           &mt LC(DE_V) DE_V  &kp DE_G              &mt LC(DE_C) DE_C  &kp DE_L        &kp DE_ESZETT
+                 &HML LGUI DE_H  &HML LALT DE_A  &HML LCTRL DE_E  &HRShiftL LSHIFT DE_I  &kp DE_U           &kp DE_D           &HRShiftR RSHFT DE_T  &HMR RCTRL DE_R    &HMR RALT DE_N  &HMR RGUI DE_S
+&mt ESCAPE DE_F  &kp DE_X        &kp DE_Q        &kp DE_A_UMLAUT  &kp DE_U_UMLAUT        &kp DE_O_UMLAUT    &kp DE_B           &kp DE_P              &kp DE_W           &kp DE_M        &kp DE_J        &kp DE_Z
+                                                 &lt 4 LEFT_GUI   &lt 2 TAB              &kp DE_SPACE       &kp ENTER          &lt 1 BSPC            &lt 3 DELETE
             >;
         };
 
