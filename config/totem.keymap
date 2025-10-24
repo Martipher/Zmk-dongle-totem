@@ -127,6 +127,7 @@
             key-positions = <34 35>;
             timeout-ms = <150>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         sqt {
@@ -134,6 +135,7 @@
             key-positions = <16 17>;
             timeout-ms = <150>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         minus {
@@ -141,6 +143,7 @@
             key-positions = <13 12>;
             timeout-ms = <150>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         underscore {
@@ -148,6 +151,7 @@
             key-positions = <2 3>;
             timeout-ms = <150>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         dqt {
@@ -155,6 +159,7 @@
             key-positions = <7 6>;
             timeout-ms = <150>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         question {
@@ -162,6 +167,7 @@
             key-positions = <1 2>;
             timeout-ms = <150>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         exclamation {
@@ -169,6 +175,7 @@
             key-positions = <11 12>;
             timeout-ms = <150>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         slash {
@@ -176,6 +183,7 @@
             key-positions = <24 23>;
             timeout-ms = <150>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         backslash {
@@ -183,6 +191,7 @@
             key-positions = <23 22>;
             timeout-ms = <150>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         left_parenthesis {
@@ -190,6 +199,7 @@
             key-positions = <27 28>;
             timeout-ms = <150>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         right_parenthesis {
@@ -197,6 +207,7 @@
             key-positions = <28 29>;
             timeout-ms = <150>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         and {
@@ -204,6 +215,7 @@
             key-positions = <17 18>;
             timeout-ms = <150>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         pipe {
@@ -211,6 +223,7 @@
             key-positions = <7 8>;
             timeout-ms = <150>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         plus {
@@ -218,6 +231,7 @@
             key-positions = <0 1>;
             timeout-ms = <150>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         equal {
@@ -225,6 +239,7 @@
             key-positions = <10 11>;
             timeout-ms = <150>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         asterisk {
@@ -232,6 +247,7 @@
             key-positions = <21 22>;
             timeout-ms = <150>;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
     };
 
