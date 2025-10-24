@@ -109,7 +109,7 @@
             quick-tap-ms = <125>;
         };
 
-        toggleLayerPress: toggleLayerPress {
+        tlp: tlp {
             compatible = "zmk,behavior-hold-tap";
             label = "TOGGLELAYERPRESS";
             bindings = <&tog>, <&kp>;
@@ -261,7 +261,7 @@
                  &kp DE_K        &kp DE_PERIOD   &kp DE_O         &kp DE_COMMA           &kp DE_Y           &mt LC(DE_V) DE_V  &kp DE_G              &mt LC(DE_C) DE_C  &kp DE_L        &kp DE_ESZETT
                  &HML LGUI DE_H  &HML LALT DE_A  &HML LCTRL DE_E  &HRShiftL LSHIFT DE_I  &kp DE_U           &kp DE_D           &HRShiftR RSHFT DE_T  &HMR RCTRL DE_R    &HMR RALT DE_N  &HMR RGUI DE_S
 &mt ESCAPE DE_F  &kp DE_X        &kp DE_Q        &kp DE_A_UMLAUT  &kp DE_U_UMLAUT        &kp DE_O_UMLAUT    &kp DE_B           &kp DE_P              &kp DE_W           &kp DE_M        &kp DE_J        &kp DE_Z
-                                                 &lt 4 LEFT_GUI   &lt 2 TAB              &kp DE_SPACE       &kp ENTER          &lt 1 BSPC            &lt 3 DELETE
+                                                 &tlp 4 LEFT_GUI  &lt 2 TAB              &kp DE_SPACE       &kp ENTER          &lt 1 BSPC            &lt 3 DELETE
             >;
         };
 
@@ -299,10 +299,10 @@
         Nav {
             display-name = "Nav";
             bindings = <
-       &bootloader  &studio_unlock  &none   &none   &to 5     &none   &none   &none   &none  &none
-       &none        &none           &none   &none   &none     &none   &none   &none   &none  &none
-&none  &none        &none           &none   &none   &none     &none   &none   &none   &none  &none  &none
-                                    &trans  &trans  &trans    &trans  &trans  &trans
+       &bootloader  &studio_unlock  &none      &msc SCRL_UP    &to 5       &none     &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none
+       &none        &mkp MCLK       &mkp RCLK  &mkp LCLK       &mkp MB4    &mkp MB5  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
+&none  &to 0        &none           &none      &msc SCRL_DOWN  &none       &none     &none           &none           &none            &none  &none
+                                    &trans     &trans          &trans      &trans    &trans          &trans
             >;
         };
 
