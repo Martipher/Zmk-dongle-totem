@@ -310,7 +310,7 @@
             display-name = "Game";
             bindings = <
          &kp DE_Y        &kp DE_X  &kp DE_C   &kp DE_V      &sl 6       &none      &none           &kp UP_ARROW    &none            &kp LS(TAB)
-         &kp LALT        &kp DE_Q  &kp DE_W   &kp DE_E      &kp DE_R    &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+         &kp DE_G        &kp DE_Q  &kp DE_W   &kp DE_E      &kp DE_R    &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
 &kp ESC  &kp LEFT_SHIFT  &kp DE_A  &kp DE_S   &kp DE_D      &kp DE_F    &none      &none           &none           &none            &none        &kp TAB
                                    &kp LCTRL  &kp LEFT_ALT  &trans      &kp ENTER  &trans          &kp LEFT_GUI
             >;
@@ -320,8 +320,8 @@
             display-name = "Game+";
             bindings = <
          &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4  &kp DE_N5    &kp DE_Z  &kp DE_U  &kp DE_I  &kp DE_O  &kp DE_P
-         &kp DE_N6  &kp DE_N7  &trans     &kp DE_N8  &kp DE_G     &kp DE_H  &kp DE_J  &kp DE_K  &kp DE_L  &kp F12
-&kp TAB  &to 0      &trans     &trans     &trans     &kp DE_N9    &kp DE_N  &kp DE_M  &kp F5    &kp F3    &kp F22   &kp LA(F4)
+         &kp DE_N6  &kp DE_N7  &trans     &kp DE_N8  &kp DE_N9    &kp DE_H  &kp DE_J  &kp DE_K  &kp DE_L  &kp F12
+&kp TAB  &to 0      &trans     &trans     &trans     &kp DE_N0    &kp DE_N  &kp DE_M  &kp F5    &kp F3    &kp F22   &kp LA(F4)
                                &trans     &trans     &trans       &trans    &trans    &trans
             >;
         };
