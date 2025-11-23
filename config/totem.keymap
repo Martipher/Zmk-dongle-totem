@@ -171,7 +171,7 @@
             require-prior-idle-ms = <100>;
         };
 
-        exclamation {
+        excl {
             bindings = <&kp DE_EXCLAMATION>;
             key-positions = <11 12>;
             timeout-ms = <150>;
