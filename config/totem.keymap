@@ -301,7 +301,7 @@
             bindings = <
        &bootloader  &studio_unlock  &none      &msc SCRL_UP    &to 5       &none     &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none
        &none        &mkp MCLK       &mkp RCLK  &mkp LCLK       &mkp MB4    &mkp MB5  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-&none  &to 0        &none           &none      &msc SCRL_DOWN  &none       &none     &none           &none           &none            &none  &none
+&none  &to 0        &to 7           &none      &msc SCRL_DOWN  &none       &none     &none           &none           &none            &none  &none
                                     &trans     &trans          &trans      &trans    &trans          &trans
             >;
         };
@@ -328,10 +328,10 @@
 
         MMO {
             bindings = <
-     &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4  &kp DE_N5    &kp  &kp  &kp  &kp  &kp
-     &kp        &kp        &kp        &kp        &kp          &kp  &kp  &kp  &kp  &kp
-&kp  &kp        &kp        &kp        &kp        &kp          &kp  &kp  &kp  &kp  &to 5  &kp
-                           &kp        &kp        &kp          &kp  &kp  &kp
+         &kp DE_N1       &kp DE_N2  &kp DE_N3  &kp DE_N4       &kp DE_N5    &trans  &trans  &trans  &trans  &trans
+         &kp DE_N6       &kp DE_N7  &kp DE_W   &kp DE_N8       &kp DE_N9    &trans  &trans  &trans  &trans  &trans
+&kp TAB  &kp LEFT_SHIFT  &kp DE_A   &kp DE_S   &kp DE_D        &kp DE_F     &trans  &trans  &trans  &to 0   &to 5   &trans
+                                    &trans     &kp LEFT_SHIFT  &trans       &trans  &trans  &trans
             >;
         };
     };
