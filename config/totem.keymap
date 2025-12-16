@@ -330,7 +330,7 @@
             bindings = <
                 &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4       &kp DE_N5    &trans  &trans  &trans  &trans  &trans
                 &kp DE_N6  &kp DE_N7  &kp DE_W   &kp DE_N8       &kp DE_N9    &trans  &trans  &trans  &trans  &trans
-&mt ESCAPE TAB  &kp DE_X   &kp DE_A   &kp DE_S   &kp DE_D        &kp DE_F     &trans  &trans  &trans  &to 0   &to 5   &kp ESC
+&mt ESCAPE TAB  &kp DE_X   &kp DE_A   &kp DE_S   &kp DE_D        &kp DE_F     &trans  &trans  &trans  &to 0   &to 5   &trans
                                       &trans     &kp LEFT_SHIFT  &trans       &trans  &trans  &trans
             >;
 
