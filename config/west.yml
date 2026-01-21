@@ -5,14 +5,14 @@ manifest:
     - name: azumafuji
       url-base: https://github.com/azumafuji
     - name: janpfisher
-      url-base: https://github.com/janpfischer
+      url-base: https://github.com/martipher
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: zmk-dongle-screen
-      remote: janpfisher
+      remote: martipher
       revision: upgrade-4.1
   self:
     path: config
