@@ -124,10 +124,9 @@
             >;
         };
 
-Button {
+        Button {
             display-name = "Button";
             bindings = <
-
         &bt BT_CLR  &trans    &trans     &out OUT_TOG  &bt BT_SEL 0    &studio_unlock  &trans      &trans     &bootloader  &trans
         &kp LGUI    &kp LALT  &kp LCTRL  &kp LSHIFT    &bt BT_SEL 1    &trans          &kp RSHIFT  &kp RCTRL  &kp RALT     &kp RGUI
 &trans  &trans      &trans    &trans     &trans        &bt BT_SEL 2    &trans          &trans      &trans     &trans       &trans    &trans
@@ -148,7 +147,7 @@ Button {
         Gameplus {
             display-name = "Gameplus";
             bindings = <
-        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &trans  &trans  &trans  &trans  &trans
+        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &trans  &trans  &none   &trans  &trans
         &kp G         &trans        &trans        &trans        &kp T           &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &trans        &kp B           &trans  &trans  &trans  &trans  &trans  &trans
                                     &trans        &trans        &none           &tog 8  &trans  &trans
