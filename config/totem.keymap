@@ -328,10 +328,10 @@
 
         MMO {
             bindings = <
-                  &kp DE_V  &kp DE_Q  &kp DE_W  &kp DE_E        &kp DE_R    &trans  &trans  &trans  &trans  &trans
-                  &kp TAB   &kp DE_A  &kp DE_S  &kp DE_D        &kp DE_F    &trans  &trans  &trans  &trans  &trans
-&mt ESCAPE CARET  &kp DE_N  &kp DE_Y  &kp DE_X  &kp DE_C        &kp DE_V    &trans  &trans  &trans  &to 0   &to 5   &trans
-                                      &trans    &kp LEFT_SHIFT  &trans      &trans  &trans  &trans
+                     &kp DE_V  &kp DE_Q  &kp DE_W   &kp DE_E        &kp DE_R    &kp DE_U  &kp DE_I  &kp LS(DE_H)  &kp LC(LA(LS(DE_T)))  &trans
+                     &kp TAB   &kp DE_A  &kp DE_S   &kp DE_D        &kp DE_F    &kp DE_G  &kp DE_H  &trans        &trans                &trans
+&mt ESCAPE DE_CARET  &kp DE_N  &kp DE_Y  &kp DE_X   &kp DE_C        &kp DE_V    &kp DE_Z  &kp DE_O  &trans        &to 0                 &to 5   &trans
+                                         &kp LCTRL  &kp LEFT_SHIFT  &trans      &trans    &trans    &kp LEFT_GUI
             >;
 
             label = "MMO";
