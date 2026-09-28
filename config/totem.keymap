@@ -262,7 +262,7 @@
                  &kp DE_K        &kp DE_PERIOD   &kp DE_A         &kp DE_COMMA           &kp DE_Y           &kp DE_P   &kp DE_D              &kp DE_L         &kp DE_M           &kp DE_J
                  &HML LGUI DE_H  &HML LALT DE_O  &HML LCTRL DE_E  &HRShiftL LSHIFT DE_I  &kp DE_U           &kp DE_G   &HRShiftR RSHFT DE_T  &HMR RCTRL DE_R  &HMR RALT DE_N     &HMR RGUI DE_S
 &mt ESCAPE DE_X  &kp DE_Z        &kp DE_Q        &kp DE_A_UMLAUT  &kp DE_U_UMLAUT        &kp DE_O_UMLAUT    &kp DE_B   &mt LC(DE_C) DE_C     &kp DE_W         &mt LC(DE_V) DE_V  &kp DE_F        &kp DE_ESZETT
-                                                 &tlp 4 LEFT_GUI  &lt 2 TAB              &kp DE_SPACE       &kp ENTER  &lt 1 BSPC            &lt 3 DELETE
+                                                 &tlp 6 LEFT_GUI  &lt 4 TAB              &kp DE_SPACE       &kp ENTER  &lt 1 BSPC            &lt 5 DELETE
             >;
         };
 
@@ -277,13 +277,33 @@
             label = "KAY+";
         };
 
+        NORSK {
+            display-name = "NORSK";
+            bindings = <
+                 &kp NB_K        &kp NB_PERIOD   &kp NB_A         &kp NB_COMMA           &kp NB_Y         &kp NB_P  &kp NB_D              &kp NB_L         &kp NB_M           &kp NB_J
+                 &HML LGUI NB_H  &HML LALT NB_O  &HML LCTRL NB_E  &HRShiftL LSHIFT NB_I  &kp NB_U         &kp NB_G  &HRShiftR RSHFT NB_T  &HMR RCTRL NB_R  &HMR RALT NB_N     &HMR RGUI NB_S
+&mt ESCAPE NB_X  &kp NB_Z        &kp NB_Q        &kp NB_AE        &kp NB_O_SLASH         &kp NB_A_RING    &kp NB_B  &mt LC(NB_C) NB_C     &kp NB_W         &mt LC(NB_V) NB_V  &kp NB_F        &to 0
+                                                 &trans           &trans                 &trans           &trans    &lt 3 BSPC            &trans
+            >;
+        };
+
+        NORSK+ {
+            label = "NORSK+";
+            bindings = <
+            &kp DE_DEGREE  &kp NB_EURO      &kp NB_DOLLAR   &kp NB_SLASH  &kp NB_BACKSLASH    &kp NB_AMPS           &kp NB_PERCENT  &kp NB_LEFT_BRACKET      &kp NB_RIGHT_BRACKET      &kp NB_ACUTE
+            &kp NB_CARET   &kp NB_QUESTION  &kp DE_EXCL     &kp NB_MINUS  &kp NB_UNDER        &kp NB_DOUBLE_QUOTES  &kp NB_SQT      &kp NB_LEFT_PARENTHESIS  &kp NB_RIGHT_PARENTHESIS  &kp NB_GRAVE
+&kp ESCAPE  &kp NB_PIPE    &kp NB_AT        &kp NB_SECTION  &kp NB_LT     &kp NB_GT           &kp NB_ASTERISK       &kp NB_HASH     &kp NB_LEFT_BRACE        &kp NB_RIGHT_BRACE        &kp NB_TILDE  &to 0
+                                            &trans          &trans        &trans              &trans                &trans          &trans
+            >;
+        };
+
         NUMBER {
             display-name = "NUMBER";
             bindings = <
                 &kp DE_ASTERISK  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_MINUS    &kp DE_SUPER2  &kp DE_LESS_THAN  &kp UP_ARROW    &kp DE_GREATER_THAN  &none
                 &kp DE_SLASH     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS     &kp DE_SUPER3  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW      &none
 &kp LEFT_SHIFT  &kp DE_N0        &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_EQUAL    &none          &none             &kp DE_COMMA    &kp DE_PERIOD        &none  &none
-                                            &trans     &trans     &trans          &trans         &trans            &trans
+                                            &trans     &trans     &trans          &trans         &lt 1 BACKSPACE   &trans
             >;
         };
 
@@ -300,9 +320,9 @@
         Nav {
             display-name = "Nav";
             bindings = <
-       &bootloader  &studio_unlock  &none      &msc SCRL_UP    &to 5       &none     &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none
+       &bootloader  &studio_unlock  &none      &msc SCRL_UP    &to 7       &none     &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none
        &none        &mkp MCLK       &mkp RCLK  &mkp LCLK       &mkp MB4    &mkp MB5  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-&none  &to 0        &to 7           &none      &msc SCRL_DOWN  &none       &none     &none           &none           &none            &none  &none
+&none  &to 0        &to 9           &to 2      &msc SCRL_DOWN  &none       &none     &none           &none           &none            &none  &none
                                     &trans     &trans          &trans      &trans    &trans          &trans
             >;
         };
@@ -310,7 +330,7 @@
         GAME {
             display-name = "Game";
             bindings = <
-         &kp DE_Y        &kp DE_X  &kp DE_C   &kp DE_V      &sl 6       &none      &none           &kp UP_ARROW    &none            &kp LS(TAB)
+         &kp DE_Y        &kp DE_X  &kp DE_C   &kp DE_V      &sl 8       &none      &none           &kp UP_ARROW    &none            &kp LS(TAB)
          &kp DE_G        &kp DE_Q  &kp DE_W   &kp DE_E      &kp DE_R    &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
 &kp ESC  &kp LEFT_SHIFT  &kp DE_A  &kp DE_S   &kp DE_D      &kp DE_F    &none      &none           &none           &none            &none        &kp TAB
                                    &kp LCTRL  &kp LEFT_ALT  &trans      &kp ENTER  &trans          &kp LEFT_GUI
@@ -322,7 +342,7 @@
             bindings = <
          &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4  &kp DE_N5    &kp DE_Z  &kp DE_U  &kp DE_I  &kp DE_O  &kp DE_P
          &kp DE_N6  &kp DE_N7  &trans     &kp DE_N8  &kp DE_N9    &kp DE_H  &kp DE_J  &kp DE_K  &kp DE_L  &kp F12
-&kp TAB  &to 0      &trans     &trans     &trans     &kp DE_N0    &kp DE_N  &kp DE_M  &kp F5    &kp F3    &to 7     &kp LA(F4)
+&kp TAB  &to 0      &trans     &trans     &trans     &kp DE_N0    &kp DE_N  &kp DE_M  &kp F5    &kp F3    &to 9     &kp LA(F4)
                                &trans     &trans     &trans       &trans    &trans    &trans
             >;
         };
@@ -331,7 +351,7 @@
             bindings = <
                      &kp DE_V  &kp DE_Q  &kp DE_W   &kp DE_E        &kp DE_R    &kp DE_U  &kp DE_I  &kp LS(DE_H)  &kp LC(LA(LS(DE_T)))  &trans
                      &kp TAB   &kp DE_A  &kp DE_S   &kp DE_D        &kp DE_F    &kp DE_G  &kp DE_H  &trans        &trans                &trans
-&mt ESCAPE DE_CARET  &kp DE_N  &kp DE_Y  &kp DE_X   &kp DE_C        &kp DE_V    &kp DE_Z  &kp DE_O  &trans        &to 0                 &to 5   &trans
+&mt ESCAPE DE_CARET  &kp DE_N  &kp DE_Y  &kp DE_X   &kp DE_C        &kp DE_V    &kp DE_Z  &kp DE_O  &trans        &to 0                 &to 7   &trans
                                          &kp LCTRL  &kp LEFT_SHIFT  &trans      &trans    &trans    &kp LEFT_GUI
             >;
 
