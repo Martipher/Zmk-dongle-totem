@@ -237,124 +237,19 @@
         };
 
         equal {
-            bindings = <&kp DE_EQUAL>;
-            key-positions = <10 11>;
-            timeout-ms = <150>;
-            layers = <0 2>;
-            require-prior-idle-ms = <100>;
-        };
-
-        asterisk {
-            bindings = <&kp DE_ASTERISK>;
-            key-positions = <21 22>;
-            timeout-ms = <150>;
-            layers = <0 2>;
-            require-prior-idle-ms = <100>;
-        };
-
-        nb_sqt {
-            bindings = <&kp NB_SQT>;
-            key-positions = <16 17>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <100>;
-        };
-
-        nb_dash {
-            bindings = <&kp NB_MINUS>;
-            key-positions = <13 12>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <100>;
-        };
-
-        nb_underscore {
-            bindings = <&kp NB_UNDERSCORE>;
-            key-positions = <2 3>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <100>;
-        };
-
-        nb_dqt {
-            bindings = <&kp NB_DQT>;
-            key-positions = <7 6>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <100>;
-        };
-
-        nb_question {
-            bindings = <&kp NB_QMARK>;
-            key-positions = <1 2>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <100>;
-        };
-
-        nb_excl {
-            bindings = <&kp NB_EXCL>;
-            key-positions = <11 12>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <100>;
-        };
-
-        nb_slash {
-            bindings = <&kp NB_SLASH>;
-            key-positions = <24 23>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <100>;
-        };
-
-        nb_backslash {
-            bindings = <&kp NB_BSLH>;
-            key-positions = <23 22>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <100>;
-        };
-
-        nb_left_parenthesis {
-            bindings = <&kp NB_LEFT_PARENTHESIS>;
-            key-positions = <27 28>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <100>;
-        };
-
-        nb_right_parenthesis {
-            bindings = <&kp NB_RIGHT_PARENTHESIS>;
-            key-positions = <28 29>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <100>;
-        };
-
-        nb_and {
-            bindings = <&kp NB_AMPERSAND>;
-            key-positions = <17 18>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <100>;
-        };
-
-        nb_pipe {
-            bindings = <&kp NB_PIPE>;
-            key-positions = <7 8>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <100>;
-        };
-
-        nb_plus {
-            bindings = <&kp NB_PLUS>;
-            key-positions = <0 1>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <100>;
-        };
-
-        nb_equal {
             bindings = <&kp NB_EQUAL>;
             key-positions = <10 11>;
             timeout-ms = <150>;
             require-prior-idle-ms = <100>;
+            layers = <0 2>;
         };
 
-        nb_asterisk {
+        asterisk {
             bindings = <&kp NB_ASTERISK>;
             key-positions = <21 22>;
             timeout-ms = <150>;
             require-prior-idle-ms = <100>;
+            layers = <0 2>;
         };
     };
 
